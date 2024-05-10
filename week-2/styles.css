@@ -1,0 +1,18 @@
+/*making a hero banner*/
+/*typically these banners are and ID, NOT A CLASS*/
+.hero-banner{
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");*/
+    background-image: url("../images/Savage_Divide_DOI_poster.webp");
+    /*alt tag; the savage divide*/
+    height: 100%;
+    width:auto;
+    background-repeat: no-repeat;
+    color: #A5F57A;
+}
+.hero-image{
+    display: none;
+}
+.h1{
+    color: #A5F57A;
+}
+
