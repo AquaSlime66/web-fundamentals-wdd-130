@@ -1,0 +1,41 @@
+
+
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 15px;
+    /*for padding, first number is the height, second is the sides, third is something??, fourth is each number goes to a different side, top clockwise, 
+    top right bottom left... margin also scoots a element to be moved into a smaller box*/
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+a {
+    font-size: 1.5em;
+    /*em is a percentage of the base standard font size, this example is 150% of the base size*/
+}
+
+main {
+    text-align: center;
+}
+
+
+img {
+    width: 45%;
+    /*display: block; changes it to a block, making each new image on a new line*/
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+/*nav a:hover, footer a:hover*/

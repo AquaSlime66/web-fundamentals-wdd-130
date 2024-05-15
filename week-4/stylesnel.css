@@ -1,0 +1,66 @@
+/*width for main/div*/
+
+header:hover{
+    color: black;
+}
+
+header, p, h1, h2 {
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+body, main{
+    background-color: #5ca1d7;
+    /*text-align: center;*/
+    /*width: 30% 30%;*/
+    
+    padding-top: 0px;
+    padding-right: 20%;
+    padding-bottom: 0px;
+    padding-left: 20%;
+
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+p, h1, header, footer, h2 {
+    text-align: center;
+}
+
+ol {
+    /*width: 300px;*/
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+}
+
+li{
+    text-align: left;
+    font-size: 20px;
+    color: black;
+}
+
+header {
+    font-size: 75px;
+}
+
+img {
+    width: 40%;
+}
+
+h2 {
+    font-size: 55px;
+    font-family: "Times New Roman";
+}
+
+footer {
+    padding-right: 20%;
+    padding-left: 20%;
+    font-family: Arial;
+    font-size: 20px;  
+}
+
+h1 {
+    font-size: 20px;
+}
