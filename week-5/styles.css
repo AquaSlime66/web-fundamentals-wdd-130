@@ -1,0 +1,21 @@
+.hero img{
+    width: 100%;
+}
+
+body{
+    margin: 0 auto;
+    background-color: grey;
+}
+
+.circle_class{
+    text-align: center;
+}
+.circle_class img{
+    border-radius: 50%;
+    border: 7px solid darkslategray;
+    width: 10%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;
+}
