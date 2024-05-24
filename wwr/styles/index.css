@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Jersey+20+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fuzzy+Bubbles:wght@400;700&family=Gochi+Hand&family=Nanum+Brush+Script&display=swap');
+
 /*delete this statement when ready..*/
 .card-img {
     width: 500px;
+    border: 10px solid #26ed58;
+}
+
+.rivers-card, .camping-card, rapids-card {
+    margin: 200px 0;
 }
 
 
@@ -13,6 +21,7 @@ nav a{
     text-align: center;
     color: #A5F57A;
     text-decoration: none;
+    padding: 35px;
 }
 
 
@@ -23,10 +32,17 @@ nav a:hover{
 
 .home-title{
     color: #26ed58;
+    font-size: 2em;
+    margin-top: 10px;
+    font-family: "Fuzzy Bubbles", "Nanum Brush Script", Georgia;
 }
 
 h4 {
     color : #A5F57A;
+}
+
+h2 {
+    margin: 0;
 }
 
 #hero-msg h1, #hero-msg h4{
@@ -41,6 +57,10 @@ main section{
     text-align: center;
 }
 
+main section img{
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color: #A5F57A;
@@ -52,12 +72,20 @@ header {
 
 body {
     background-color: #c28229;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-family: "Cutive Mono", "Courier New", "Jacquard 24";
 }
 
 .book, .join{
     background-color: #A5F57A;
     color: #3e3e3e;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5-px;
 }
 
 .book:hover, join:hover{
@@ -67,22 +95,36 @@ body {
 
 .msg {
     background-color: #A5F57A;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2{
     color: #c28229;
+    font-family: "Fuzzy Bubbles", "Nanum Brush Script", Georgia;
 }
 
 .msg p{
     color: #2e2020;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.mountains {
+    margin: 100px 0;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .logo {
     width: 80px;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 #hero-img{
@@ -93,7 +135,9 @@ body {
 footer {
     background-color: #4d4d4d;
     color: #A5F57A;
+    padding: 25px 50px;
     /* left off over here at step 12, adding background colors to several elements*/
+    margin-top: 200px;
 }
 
 footer p {
@@ -112,5 +156,9 @@ footer a{
 footer a:hover{
     background-color: #26ed58;
     color: #2e2020;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
