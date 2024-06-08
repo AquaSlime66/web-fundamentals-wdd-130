@@ -5,9 +5,35 @@
 .card-img {
     width: 500px;
     border: 10px solid #26ed58;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #55584d;
 }
 
-.rivers-card, .camping-card, rapids-card {
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.card-img, .mountains {
+    width: 100%;
+} 
+
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+.rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
 
@@ -31,10 +57,12 @@ nav a:hover{
 }
 
 .home-title{
-    color: #26ed58;
+    /*color: #26ed58;*/
+    color: #976623;
     font-size: 2em;
     margin-top: 10px;
     font-family: "Fuzzy Bubbles", "Nanum Brush Script", Georgia;
+    opacity: 1;
 }
 
 h4 {
@@ -47,10 +75,36 @@ h2 {
 
 #hero-msg h1, #hero-msg h4{
     text-align: center;
+    opacity: 1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    background-color: #26ed58;
+    opacity: 0.95;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
 }
 
 .button-box {
     text-align: center;
+}
+
+main, .home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
 
 main section{
@@ -64,10 +118,19 @@ main section img{
 #background {
     height: 725px;
     background-color: #A5F57A;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 header {
     background-color: #4d4d4d;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
 }
 
 body {
@@ -94,13 +157,16 @@ body {
 }
 
 .msg {
-    background-color: #A5F57A;
+    background-color: #c28229;
     line-height: 1.5em;
     padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg h2{
-    color: #c28229;
+    color: #26ed58;
     font-family: "Fuzzy Bubbles", "Nanum Brush Script", Georgia;
 }
 
@@ -111,7 +177,11 @@ body {
 }
 
 .mountains {
-    margin: 100px 0;
+    width: 100%;
+    /*margin: 100%;*/
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #2e2020;
 }
 
 .icon {
@@ -125,6 +195,8 @@ body {
 
 #logo_link {
     padding-top: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 #hero-img{
@@ -138,6 +210,9 @@ footer {
     padding: 25px 50px;
     /* left off over here at step 12, adding background colors to several elements*/
     margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer p {
@@ -162,3 +237,48 @@ footer .social img {
     padding-top: 15px;
 }
 
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+        background-color: #26ed58;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
