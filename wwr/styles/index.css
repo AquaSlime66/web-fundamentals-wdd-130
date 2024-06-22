@@ -237,6 +237,106 @@ footer .social img {
     padding-top: 15px;
 }
 
+/*this is for the second page*/
+
+.faq-header {
+   padding-top: 30px;
+   padding-bottom: 10px;
+}
+
+#faq-title {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    text-align: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 5px;
+    color:#26ed58;
+}
+
+.faq-q-grids {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto auto 1fr ;
+}
+
+.faq-header-plural{
+    font-size: 1.5em;
+    grid-column: 2/6;
+    grid-row: 1;
+
+    background-color: #A5F57A;
+    border-style: solid;
+    border-color: #3e3e3e;
+    color:#c28229;
+    padding: 5px;
+}
+
+.faq-imgv1{
+    grid-column: 2/4;
+    grid-row: 2/5;
+
+    width: 90%;
+    border-style: groove;
+    border-color: #26ed58;
+    border-width: 5px;
+    margin: 0 auto;
+}
+
+.faq-imgv2{
+    grid-column: 4/6;
+    grid-row: 2/5;
+
+    width: 90%;
+    border-style: groove;
+    border-color: #26ed58;
+    border-width: 5px;
+    margin: 0 auto;
+}
+
+.reuse-V1-ps1 {
+    text-indent: 50px;
+    font-size: .85em;
+    font-weight: 800;
+    margin: 0 auto;
+
+    grid-column: 4/6;
+    grid-row: 2;
+}
+
+.reuse-V1-ps2 {
+    text-indent: 50px;
+    font-size: .85em;
+    font-weight: 800;
+
+    grid-column: 4/6;
+    grid-row: 3;
+}
+
+.reuse-V2-ps1 {
+    text-indent: 50px;
+    font-size: .85em;
+    font-weight: 800;
+    margin: 0 auto;
+
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+.reuse-V2-ps2 {
+    text-indent: 50px;
+    font-size: .85em;
+    font-weight: 800;
+
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
